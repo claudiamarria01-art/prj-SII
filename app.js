@@ -1,4 +1,3 @@
-// ===== Search toggle =====
 document.addEventListener("DOMContentLoaded", () => {
   const searchIcon = document.getElementById("search-icon");
   const searchInput = document.getElementById("search-input");
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ===== CART (persistă în localStorage) =====
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price) {
@@ -50,7 +48,6 @@ function renderCart() {
 
 document.addEventListener("DOMContentLoaded", renderCart);
 
-// ===== FAVORITES (persistă în localStorage) =====
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
 function toggleFavorite(icon) {
@@ -124,7 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadFavorites();
 });
 
-// ===== SLIDER (doar dacă există pe pagină) =====
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".image-slider .slide");
   if (!slides.length) return;
@@ -146,4 +142,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(() => window.changeSlide(1), 4000);
   showSlide(currentSlide);
+
 });
