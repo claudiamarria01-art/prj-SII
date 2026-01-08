@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>LashMeUP – Coș</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="left-group">
+      <div class="logo">
+        <img src="lashlogo.jpg" class="logo-img" alt="LashMeUP">
+      </div>
+
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Acasă</a>
+        <a href="produse.html"><i class="fa-solid fa-eye"></i> Produse</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+
+    <div class="right-group">
+      <div class="favorites-icon">
+        <a href="favorite.html" style="color:#6b4f4f;"><i class="fa-solid fa-heart"></i></a>
+      </div>
+
+      <div class="cart-icon" style="margin-left: 20px;">
+        <a href="cos.html" style="color:#6b4f4f;"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>Coș de cumpărături</h2>
+  <div class="cart">
+    <table>
+      <thead>
+        <tr><th>Produs</th><th>Preț</th><th>Elimină</th></tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table>
+
+    <div class="total" id="cart-total">Total: 0 RON</div>
+    <div class="checkout"><button>Finalizează comanda</button></div>
+  </div>
+</section>
+
+<footer>© 2025 LashMeUP.</footer>
+<script src="app.js"></script>
+</body>
+</html>

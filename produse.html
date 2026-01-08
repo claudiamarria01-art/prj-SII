@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>LashMeUP – Produse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="left-group">
+      <div class="logo">
+        <img src="lashlogo.jpg" class="logo-img" alt="LashMeUP">
+      </div>
+
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Acasă</a>
+        <a href="produse.html"><i class="fa-solid fa-eye"></i> Produse</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+
+    <div class="right-group">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon" style="cursor:pointer;"></i>
+        <input type="text" id="search-input" placeholder="Caută produse...">
+      </div>
+
+      <div class="favorites-icon">
+        <a href="favorite.html" style="color:#6b4f4f;"><i class="fa-solid fa-heart"></i></a>
+      </div>
+
+      <div class="cart-icon" style="margin-left: 20px;">
+        <a href="cos.html" style="color:#6b4f4f;"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>Produse</h2>
+
+  <div class="filter-sort-bar">
+    <i class="fa-solid fa-filter"></i>
+    <i class="fa-solid fa-arrow-up-wide-short"></i>
+  </div>
+
+  <div class="products">
+    <div class="product-card" data-id="1" data-name="LashMeUP Big Volume" data-price="45">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="unul.jpg" alt="LashMeUP Big Volume">
+      <h3>LashMeUP Big Volume</h3>
+      <div class="price">45 RON</div>
+      <button onclick="addToCart('LashMeUP Big Volume',45)">Adaugă în coș</button>
+    </div>
+
+    <div class="product-card" data-id="2" data-name="LashMeUP The Starter Kit" data-price="70">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="starter.jpg" alt="LashMeUP The Starter Kit">
+      <h3>LashMeUP The Starter Kit</h3>
+      <div class="price">70 RON</div>
+      <button onclick="addToCart('LashMeUP The Starter Kit',70)">Adaugă în coș</button>
+    </div>
+
+    <div class="product-card" data-id="3" data-name="LashMeUP 2Nights Bundle" data-price="65">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="set2.jpg" alt="LashMeUP 2Nights Bundle">
+      <h3>LashMeUP 2Nights Bundle</h3>
+      <div class="price">65 RON</div>
+      <button onclick="addToCart('LashMeUP 2Nights Bundle',65)">Adaugă în coș</button>
+    </div>
+
+    <div class="product-card" data-id="4" data-name="LashMeUP Lipici pentru gene" data-price="30">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="lipici.jpg" alt="LashMeUP Lipici pentru gene">
+      <h3>LashMeUP Lipici pentru gene</h3>
+      <div class="price">30 RON</div>
+      <button onclick="addToCart('LashMeUP Lipici pentru gene',30)">Adaugă în coș</button>
+    </div>
+
+    <div class="product-card" data-id="5" data-name="LashMeUP Deluxe Set" data-price="210">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="fullset.jpg" alt="LashMeUP Deluxe Set">
+      <h3>LashMeUP Deluxe Set</h3>
+      <div class="price">210 RON</div>
+      <button onclick="addToCart('LashMeUP Deluxe Set',210)">Adaugă în coș</button>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 LashMeUP.</footer>
+<script src="app.js"></script>
+</body>
+</html>

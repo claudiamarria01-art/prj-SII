@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>LashMeUP – Gene false premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="left-group">
+      <div class="logo">
+        <img src="lashlogo.jpg" class="logo-img" alt="LashMeUP">
+      </div>
+
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Acasă</a>
+        <a href="produse.html"><i class="fa-solid fa-eye"></i> Produse</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+
+    <div class="right-group">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon" style="cursor:pointer;"></i>
+        <input type="text" id="search-input" placeholder="Caută produse...">
+      </div>
+
+      <div class="favorites-icon">
+        <a href="favorite.html" style="color:#6b4f4f;"><i class="fa-solid fa-heart"></i></a>
+      </div>
+
+      <div class="cart-icon" style="margin-left: 20px;">
+        <a href="cos.html" style="color:#6b4f4f;"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="free-shipping-bar">
+  Transport gratuit la comenzi de peste 200 de lei!
+</div>
+
+<section>
+  <div class="image-slider">
+    <img src="imagine1.jpg" class="slide active" alt="Imagine 1">
+    <img src="imagine2.jpg" class="slide" alt="Imagine 2">
+    <img src="imagine3.jpg" class="slide" alt="Imagine 3">
+
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+  </div>
+
+  <div class="banner">
+    <h1>Eleganță naturală pentru privirea ta...</h1>
+    <p>Gene false premium, create pentru rafinament și confort absolut.</p>
+    <div class="discover-button" style="margin-top: 20px;">
+      <button onclick="window.location.href='produse.html'">Descoperă produsele</button>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 LashMeUP.</footer>
+<script src="app.js"></script>
+</body>
+</html>
